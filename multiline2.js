@@ -46,7 +46,7 @@ function makeLineChart1(dataset, xName, yObjs, axisLables) {
 
     chartObj.xFormatter = chartObj.formatAsNumber;
     chartObj.yFormatter = chartObj.formatAsFloat;
-    
+
     chartObj.bisectYear = d3.bisector(chartObj.xFunct).left; //< Can be overridden in definition
 
 //Create scale functions
@@ -156,9 +156,9 @@ function makeLineChart1(dataset, xName, yObjs, axisLables) {
         }
 
         // Year label
-        focus.append("text").attr("class", "focus year").attr("x", 10).attr("y", 7);
-	focus.append("text").attr("class", "focus artist").attr("x", 15).attr("y", 7);
-	focus.append("text").attr("class", "focus track").attr("x", 20).attr("y", 7);    
+        focus.append("text").attr("class", "focus year").attr("x", 9).attr("y", 7);
+	focus.append("text").attr("class", "focus artist").attr("x", 19).attr("y", 7);
+	focus.append("text").attr("class", "focus track").attr("x", 29).attr("y", 7);    
         // Focus line
         focus.append("line").attr("class", "focus line").attr("y1", 0).attr("y2", chartObj.height);
 
@@ -193,9 +193,9 @@ function makeLineChart1(dataset, xName, yObjs, axisLables) {
 
             focus.select(".focus.line").attr("transform", "translate(" + chartObj.xScale(chartObj.xFunct(d)) + ")").attr("y1", minY);
             focus.select(".focus.year").text("Year: " + chartObj.xFormatter(chartObj.xFunct(d)));
-	    focus.select(".focus.artist").text("Arrtist: " + chartObj.d.artist);
-	    focus.select(".focus.track").text("Song: " + chartObj.d.track);
-        }.
+	    focus.select(".focus.artist").text("Artist: " + chartObj.d.artist);
+	    focus.select(".focus.track").text("Track: " + chartObj.d.track);	
+        }
 
     };
     return chartObj;
