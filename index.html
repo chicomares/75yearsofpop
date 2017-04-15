@@ -45,7 +45,7 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">75 YEARS OF POP</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">75 YEARS OF P9OP</span>
   </div>
 </div>
 
@@ -175,7 +175,7 @@ var layout = {
   <h3 class="w3-center">VALENCE</h3>
   <p class="w3-center"><em>Valence is how Spotify measures the positivity of a song. The closer it is to 1, the more positive it is.</em></p>
   <div class="chart-wrapper" id="valencechart1"><script type="text/javascript">
-    d3.csv('valenceyear.csv', function(error, data) {
+    d3.csv('valence.csv', function(error, data) {
     data.forEach(function (d) {
         d.year = +d.year;
         d.valenceaverage = +d.valenceaverage;
