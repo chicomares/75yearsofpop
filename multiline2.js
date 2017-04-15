@@ -157,8 +157,8 @@ function makeLineChart1(dataset, xName, yObjs, axisLables) {
 
         // Year label
         focus.append("text").attr("class", "focus year").attr("x", 9).attr("y", 7);
-	focus.append("text").attr("class", "focus artist").attr("x", 19).attr("y", 8);
-	focus.append("text").attr("class", "focus track").attr("x", 29).attr("y", 9);    
+		focus.append("text").attr("class", "focus artist").attr("x", 19).attr("y", 10);
+		focus.append("text").attr("class", "focus track").attr("x", 29).attr("y", 13);
         // Focus line
         focus.append("line").attr("class", "focus line").attr("y1", 0).attr("y2", chartObj.height);
 
@@ -193,8 +193,8 @@ function makeLineChart1(dataset, xName, yObjs, axisLables) {
 
             focus.select(".focus.line").attr("transform", "translate(" + chartObj.xScale(chartObj.xFunct(d)) + ")").attr("y1", minY);
             focus.select(".focus.year").text("Year: " + chartObj.xFormatter(chartObj.xFunct(d)));
-	    focus.select(".focus.artist").text("Artist: " + chartObj.d.artist);
-	    focus.select(".focus.track").text("Track: " + chartObj.d.track);	
+			focus.select(".focus.artist").text("Artist: ");
+			focus.select(".focus.track").text("Song: ");
         }
 
     };
