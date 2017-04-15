@@ -47,7 +47,6 @@ function makeLineChart1(dataset, xName, yObjs, axisLables) {
     chartObj.xFormatter = chartObj.formatAsNumber;
     chartObj.yFormatter = chartObj.formatAsFloat;
     
-
     chartObj.bisectYear = d3.bisector(chartObj.xFunct).left; //< Can be overridden in definition
 
 //Create scale functions
@@ -194,9 +193,9 @@ function makeLineChart1(dataset, xName, yObjs, axisLables) {
 
             focus.select(".focus.line").attr("transform", "translate(" + chartObj.xScale(chartObj.xFunct(d)) + ")").attr("y1", minY);
             focus.select(".focus.year").text("Year: " + chartObj.xFormatter(chartObj.xFunct(d)));
-	    focus.select(".focus.artist").text("Arrtist: " + );
-	    focus.select(".focus.track").text("Song: " + +d.track);
-        }
+	    focus.select(".focus.artist").text("Arrtist: " + chartObj.d.artist);
+	    focus.select(".focus.track").text("Song: " + chartObj.d.track);
+        }.
 
     };
     return chartObj;
