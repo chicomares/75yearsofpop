@@ -11,7 +11,8 @@
 <script type="text/javascript" src="d3.v3.min.js" charset="utf-8"></script>
 <script src="d3.min.js"></script>
 <script src="multiline1.js" charset="utf-8"></script>
-<script src="multiline2.js" charset="utf-8"></script>	
+<script src="multiline2.js" charset="utf-8"></script>
+<script src="multiline3.js" charset="utf-8"></script>	
 <script src="plotly-latest.min.js"></script>
 <script src="numeric.min.js"></script>
 
@@ -46,7 +47,7 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">75 YEARS OF cOP</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">75 YEARS OF POP</span>
   </div>
 </div>
 
@@ -205,7 +206,7 @@ var layout = {
 		d.sad = +d.sad;
 		d.depressive = +d.depressive;        
     });
-    var chart = makeLineChart(data, 'year', {
+    var chart = makeLineChart2(data, 'year', {
         'Above 0.8': {column: 'euphoric'},
         'Between 0.6 and 0.8': {column: 'happy'},
 	'Between 0.4 and 0.6': {column: 'midrange'},
