@@ -69,7 +69,7 @@
         'Average danceability': {column: 'danceability'},
         'Average energy': {column: 'energy'},
 	'Average valence': {column: 'valence'},	  
-    }, {xAxis: 'Years', yAxis: 'Metric'});
+    }, {xAxis: 'Years', yAxis: 'Average'});
     chart.bind("#zeitgeistchart");
     chart.render();
 });
@@ -185,7 +185,7 @@ var layout = {
     var chart = makeLineChart(data, 'year', {
         'Average valence': {column: 'valenceaverage'},
         'Percentage of songs in minor scales': {column: 'minorkeys'},
-    }, {xAxis: 'Years', yAxis: 'Amount'});
+    }, {xAxis: 'Years', yAxis: 'Average'});
     chart.bind("#valencechart1");
     chart.render();
 });
