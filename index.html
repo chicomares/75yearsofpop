@@ -182,8 +182,8 @@ var layout = {
         d.minorkeys = +d.minorkeys;        
     });
     var chart = makeLineChart(data, 'year', {
-        'Average valence of the songs': {column: 'valenceaverage'},
-        'Percentage of songs in minor keys': {column: 'minorkeys'},
+        'Average valence': {column: 'valenceaverage'},
+        'Percentage of songs in minor scales': {column: 'minorkeys'},
     }, {xAxis: 'Years', yAxis: 'Amount'});
     chart.bind("#valencechart1");
     chart.render();
