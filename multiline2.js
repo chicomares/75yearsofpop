@@ -157,8 +157,8 @@ function makeLineChart1(dataset, xName, yObjs, axisLables) {
 
         // Year label
         focus.append("text").attr("class", "focus year").attr("x", 9).attr("y", 7);
-	focus.append("text").attr("class", "focus artist").attr("x", 9).attr("y", 27);
-	focus.append("text").attr("class", "focus track").attr("x", 9).attr("y", 37);    
+	focus.append("text").attr("class", "focus artist").attr("x", 19).attr("y", 27);
+	focus.append("text").attr("class", "focus track").attr("x", 29).attr("y", 37);    
         // Focus line
         focus.append("line").attr("class", "focus line").attr("y1", 0).attr("y2", chartObj.height);
 
